@@ -1,0 +1,142 @@
+/*  CSS RESET 
+
+set border-box (so that css uses a 
+more reasonable box model, and so it’s 
+like every other platform) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+    /* get rid of default margins which 
+    vary depending on browser anyway, just 
+    set it yourself later*/
+    * {
+    margin: 0;
+    }
+
+    /* media elements are replaced elements 
+    which have a width based on the media, 
+    so we prevent it from expanding beyond 
+    its container, and take up a row */
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    /* make tables look like spreadsheets 
+    and less like a spaced-out grid */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* this is to add typographic tweaks: more 
+    accessible line-height & improved rendering */ 
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    /* END CSS RESET */ 
+
+body {
+    background-color: orchid;
+}
+
+.column{
+    flex: 50%;
+    padding: 5px;
+}
+
+.row{
+    display: flex;
+}
+
+.column-story{
+    flex: 33.3%;
+    padding: 3px;
+}
+
+.caption{
+    font-size: small;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+#no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+#margin {
+    height: 70px;
+    width: 100%;
+}
+
+#small-spacer{
+    height: 7px;
+    width: 100%;
+}
+
+#spacer {
+    height: 20px;
+    width: 100%;
+}
+
+#assignment-title{
+    background-color: orchid;
+}
+
+#assignment-intro{
+    margin:auto;
+    width: 70%;
+    text-align: center; 
+    border-radius: 25px;
+    border: 2px solid orchid;
+}
+
+#interface-sketch {
+    background-color: rgb(250, 234, 250);
+}
+
+#laundry-sketch {
+    height: auto;
+}
+
+#observations-and-interviews {
+    background-color:rgb(245, 214, 245)
+}
+
+#observations-list{
+    border: 5px solid rgb(250, 234, 250);
+    border-radius: 25px;
+    line-height: 1.6;
+}
+
+#questions-list{
+    line-height: 1.6;
+}
+
+#interview-resp-list{
+    background-color: rgb(250, 234, 250);
+    border:rgb(250, 234, 250);
+    border-radius: 25px;
+}
+
+#personas{
+    background-color: rgb(235, 173, 235);
+}
+
+#emth{
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#storyboard{
+    background-color: rgb(218, 113, 215);
+}
+
